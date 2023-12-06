@@ -31,7 +31,7 @@ function Signup() {
     e.preventDefault();
     
     try {
-      const response = await axios.post('http://localhost:3001/api/v1/user/', formData);
+      const response = await axios.post('http://localhost:3001/api/v1/tourist/', formData);
       navigate('/');
       alert("hi");
     } catch (error) {
@@ -41,9 +41,7 @@ function Signup() {
 
   return (
     <div className='signup'>
-      <div className='left'>
-        <img src={Log} alt=" " />
-      </div>
+      
       <div className='h2'>Sign Up</div>
 
       <div className='contain'>

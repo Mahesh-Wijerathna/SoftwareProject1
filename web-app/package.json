@@ -21,6 +21,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-redux": "^8.1.3",
     "react-router-dom": "^6.20.1",
     "react-scripts": "^5.0.1",
@@ -28,11 +29,9 @@
     "web-vitals": "^3.5.0"
   },
   "scripts": {
-    "start": "npm-run-all -p start-frontend start-backend",
+    "start": "npm-run-all -p start-backend start-frontend",
     "start-frontend": "react-scripts start",
     "start-backend": "cd ../backend/src && npm start",
-
-    
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
