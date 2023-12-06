@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const createHttpError = require('http-errors')
 const UserRouter = require('./routes/user')
+const TouristRouter = require('./routes/tourist')
 const weatherapp = require('./weatherapp')
 
 app.use('/public/pets', express.static('public/pets'))
@@ -13,7 +14,7 @@ app.use(cors())
 
 app.use(express.json())
 app.use('/api/v1/user', UserRouter);
-
+app.use('/api/v1/tourist', TouristRouter );
 
 app.get('/weather', async (req, res) => {
     if (!req.query.address) {
