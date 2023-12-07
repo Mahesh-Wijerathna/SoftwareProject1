@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     
-    "start": "cross-env CURRENT_WORKING_DIR=webapp npm run start-webapp",
+    "start": "cd webapp && npm start",
     "start-webapp": "cd %CURRENT_WORKING_DIR% && npm start"
   },
   "keywords": [],
